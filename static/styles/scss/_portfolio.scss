@@ -1,0 +1,50 @@
+.portfolio{
+	position: relative;
+	padding-left: 0px;
+    padding-right: 0px;
+    background: #5a2d44;
+	.portfolio-head-title,.portfolio-head-copy{
+		margin-left: 15px;
+		margin-right: 15px;		
+	}
+	article{
+		text-transform: uppercase;
+	}
+	.project-wrap{
+		min-height: 300px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		background-size: cover;
+		background-repeat: no-repeat;
+		.portfolio-btn{
+			width: 100px;
+			height: 30px;
+			border:1px solid white;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			transition: all 0.5s ease;
+			color: #fff;
+			text-decoration: none;
+			&:hover{
+				background:#fff;
+				color: #5a2d44;
+			}
+		}
+	}
+}
+.case1{
+	background-image: url(../../assets/images/ignition-gradient.jpg);
+}
+.case2{
+	background-image: url(../../assets/images/drstrange-gradient.jpg);
+}
+
+.case3{
+	background-image: url(../../assets/images/three_little_pigs-gradient.jpg);
+}
+.case4{
+	background-image: url(../../assets/images/emmy-gradient.jpg);
+}

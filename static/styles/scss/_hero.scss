@@ -1,0 +1,53 @@
+.hero{
+	height: 70vh;
+	background-image: url(../../assets/images/hero-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	.copy-wrap{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+		h1,p,hr{
+			padding: 0 15px;
+			color: #fff;
+		}	
+		hr{
+			width: 80%;
+		}
+		.last-hero{
+			margin-bottom: 40px;
+		}
+		.contact-icons{
+			display: flex;
+			justify-content: space-around;
+			flex-direction: row;
+			align-items: center;
+			height: 25px;
+			width: 30%;
+			margin:0 auto;
+			a{
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+// Hero tweaks for Cases
+.caseHero{
+	.copy-wrap{
+		background: rgba(0,0,0,0.8);
+		.last-hero{
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
+@media screen and (min-width:600px) {
+	.hero{
+		.copy-wrap{
+			text-align: center;
+		}
+	}
+}
