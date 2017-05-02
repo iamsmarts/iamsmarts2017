@@ -1,7 +1,7 @@
 # IAMSMARTS.COM - 2017 VERSION
 
-*05/01/2017 (5:30pm)*
-##update  
+*05/01/2017 (5:30pm)*  
+## update  
 static site is now on branch *static-build  
 
 HTML and Styles completeish, ready to introduce React JS. 
@@ -11,8 +11,8 @@ localhost:9595
 
 
 
-*05/01/2017 (8:30pm)* 
-##master is now first version of the React build  
+*05/01/2017 (8:30pm)*   
+## master is now first version of the React build  
 working react branch is *react-build
 To run locally run yarn start
 localhost:8080
