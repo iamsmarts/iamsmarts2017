@@ -8,6 +8,7 @@ class Hero extends Component{
 					<h1>Hi, I am Rudy Quevedo the Frontend guy.</h1>
 					<p className="last-hero"><em>Currently located in Los Angeles, and available for hire. checkout my <a href="#">CV</a></em></p>
 					<hr />
+					<p><small>05/01/2017 - Work in Progress, built with ReactJS, HTML5, Bootstrap3, SCSS, Flexbox, Webpack, and Yarn. See code and documentation on github <em><strong>- Rudy</strong></em></small></p>
 					<div className="contact-icons">
 						<a href="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
 						<a href="#"><i className="fa fa-github" aria-hidden="true"></i></a>

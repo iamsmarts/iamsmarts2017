@@ -5829,7 +5829,7 @@ body {
       text-decoration: none; }
 
 .cr-wrap {
-  background-image: linear-gradient(#5a2d44, #000);
+  background-image: linear-gradient(#884668, #000);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -5930,7 +5930,7 @@ header {
   position: relative;
   padding-left: 0px;
   padding-right: 0px;
-  background: #5a2d44; }
+  background: #884668; }
   .portfolio .portfolio-head-title, .portfolio .portfolio-head-copy {
     margin-left: 15px;
     margin-right: 15px; }

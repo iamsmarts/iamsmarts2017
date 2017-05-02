@@ -7,7 +7,7 @@ class Header extends Component{
 				<div className="col-xs-6 col-md-3">
 					<a href="#"><p>iamsmarts.com</p></a>
 				</div>
-				<div className="col-xs-6 col-md-3">
+				<div className="col-xs-6 col-md-3 pull-right">
 					<a href="#" className="pull-right"><p>MENU <i className="fa fa-bars" aria-hidden="true"></i></p></a>
 				</div>
 			</header>
