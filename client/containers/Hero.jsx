@@ -1,20 +1,24 @@
 import React, {Component} from 'react';
+import LandingCopy from '../containers/LandingCopy.jsx';
+
 
 class Hero extends Component{
+   componentDidMount() {
+      console.log('is this landing?',this.props.isLanding)
+   }
 	render(){
+		const isLanding = this.props.isLanding;
+		let displayCopy = null;
+		if (isLanding) {
+			displayCopy = <LandingCopy/>
+		}
 		return(
 			<div className="row hero">
 				<div className="copy-wrap">
-					<h1>Hi, I am Rudy Quevedo the Frontend guy.</h1>
-					<p className="last-hero"><em>Currently located in Los Angeles, and available for hire. checkout my <a href="#">CV</a></em></p>
+					<h1>{this.props.heroTitle}</h1>
+					<p className="last-hero"><em>{this.props.heroSubCopy} <a href={this.props.heroLink}>{this.props.heroLinkCopy}</a>.</em></p>
 					<hr />
-					<p><small>05/01/2017 - Work in Progress, built with ReactJS, HTML5, Bootstrap3, SCSS, Flexbox, Webpack, and Yarn. See code and documentation on github <em><strong>- Rudy</strong></em></small></p>
-					<div className="contact-icons">
-						<a href="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
-						<a href="#"><i className="fa fa-github" aria-hidden="true"></i></a>
-						<a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>
-					</div>
+					{displayCopy}
 				</div>
 			</div>
 		);

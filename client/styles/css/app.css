@@ -5835,7 +5835,9 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  width: 100%; }
+  width: 100vw; 
+  margin-left: -15px;
+  margin-right:-15px}
 
 .menu-modal {
   display: none;
@@ -5891,7 +5893,8 @@ header {
     .hero .copy-wrap hr {
       width: 80%; }
     .hero .copy-wrap .last-hero {
-      margin-bottom: 40px; }
+      margin-bottom: 40px; 
+      font-size: 1.3em}
     .hero .copy-wrap .contact-icons {
       display: flex;
       justify-content: space-around;

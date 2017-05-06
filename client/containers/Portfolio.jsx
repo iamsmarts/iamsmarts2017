@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 class Portfolio extends Component{
 	constructor(props){
@@ -11,46 +12,10 @@ class Portfolio extends Component{
         };
     }
     componentDidMount(){
-        // Static data
-        const data = [
-        	{
-        		id:1,
-        		class:'project-wrap col-xs-12 col-sm-5 case1',
-        		name:'Ignition Creative',
-        		description:'HTML5, CSS3, Foundation5, jquery, Expression Engine',
-        		link:'#',
-        		linkDescription:'SEE DETAILS',
-        	},
-        	{
-        		id:2,
-        		class:'project-wrap col-xs-12 col-sm-7 case2',
-        		name:'Doctor Strange',
-        		description:'HTML5, SCSS, Javascript ',
-        		link:'#',
-        		linkDescription:'SEE DETAILS',
-        	},
-        	{
-        		id:3,
-        		class:'project-wrap col-xs-12 col-sm-7 case3',
-        		name:'ABCmouse JS Games',
-        		description:'Vanilla JavaScript',
-        		link:'#',
-        		linkDescription:'SEE DETAILS',
-        	},
-        	{
-        		id:4,
-        		class:'project-wrap col-xs-12 col-sm-5 case4',
-        		name:'FOX FYC EMMYS',
-        		description:'HTML5, CSS3, Jquery, Laravel4',
-        		link:'#',
-        		linkDescription:'SEE DETAILS',
-        	},
-        ];
         // Update state
-        this.setState({cases: data});
+        this.setState({cases: this.props.caseData});
     }
     componentDidUpdate(){
-        console.log(this.state.cases[0])
 
     }
 	render(){
@@ -59,7 +24,7 @@ class Portfolio extends Component{
                 <article className={project.class} id={project.id} key={project.id}>
 					<h3>{project.name}</h3>
 					<p>{project.description}</p>
-					<a href={project.link} className="portfolio-btn">{project.linkDescription}</a>
+					<Link to={`/projects/${project.link}`} className="portfolio-btn">{project.linkDescription}</Link>
 				</article>
             )
         });
